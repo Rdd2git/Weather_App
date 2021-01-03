@@ -1,5 +1,61 @@
 @import "vars";
 @import "libs";
 @import "fonts";
-
 @import "media";
+@import "snow";
+
+body {
+  box-sizing: border-box;
+}
+button,
+input {
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+}
+.header {
+  height: 80px;
+  background-color: darkturquoise;
+}
+.header__wrapper {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo-text {
+  margin: 0;
+  color: ghostwhite;
+  padding: 25px;
+  line-height: 30px;
+  font-size: 28px;
+  opacity: o.6;
+}
+
+.header__search {
+  display: flex;
+  justify-content: flex-end;
+  padding: 25px;
+  width: 640px;
+  flex-grow: 3;
+  &-btn {
+    margin-left: 15px;
+    background-color: yellow;
+    font-weight: 600;
+    color: rgba(0, 0, 205, 0.575);
+    text-transform: uppercase;
+    border-radius: 3px;
+  }
+  &-input {
+    border-radius: 3px;
+    min-width: 340px;
+  }
+}
+.viewer__wrapper {
+  height: 500px;
+}
+.night {
+  background: linear-gradient(to bottom, rgb(1, 1, 27) 75%, black 100%);
+}

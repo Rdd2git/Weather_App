@@ -7,8 +7,36 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+    <header class="header">
+        <div class="header__wrapper">
+           <div class="header__logo">
+                <p class="header__logo-text">
+                    Weather App
+                </p>
+            </div> 
+            <div class="header__search">
+                <input class="header__search-input" type="text" name="location" id="q">
+                <button class="header__search-btn" type="submit">Enter your location</button>
+            </div>
+        </div>
+        
+    </header>
+    <main class="viewer ">
+        <div class="viewer__wrapper " >
+            <div class="viewer__weather"></div>
+            <div class="viewer__action"></div>
+        </div>
+        
+    </main>
+    <aside>
+        <div class="wrapper__aside">
+            <div class="aside__sport">
+
+            </div>
+        </div>
+    </aside>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>

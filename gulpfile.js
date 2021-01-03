@@ -17,7 +17,7 @@ gulp.task("scss", function () {
     .pipe(sass({ outputStyle: "compressed" }))
     .pipe(
       autoprefixer({
-        browsers: ["last 2 versions"],
+        overrideBrowserslist: ["last 2 versions"],
       })
     )
     .pipe(rename({ suffix: ".min" }))
@@ -39,7 +39,7 @@ gulp.task("html", function () {
 
 gulp.task("js", function () {
   return gulp
-    .src([])
+    .src(["app/js/**/*.js"])
     .pipe(concat("libs.min.js"))
     .pipe(uglify())
     .pipe(gulp.dest("app/js"))
