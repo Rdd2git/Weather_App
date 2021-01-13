@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.min.css">
+    
 </head>
 <body>
     <header class="header">
@@ -14,9 +15,14 @@
                     Weather App
                 </p>
             </div> 
-            <div class="header__search">
-                <input class="header__search-input" type="text" name="location" id="q">
-                <button class="header__search-btn" type="submit">Enter your location</button>
+            <div class="header__search"  >
+                <form id="set" onchange="this.value = event.target.value">
+                    <input  class="header__search-input" type="text"  name="location" placeholder='enter your location' id="set">
+                   
+                </form>
+                
+                
+                
             </div>
         </div>
         
@@ -24,7 +30,9 @@
     <main class="viewer ">
         <div class="viewer__wrapper " >
             <div class="viewer__weather"></div>
-            <div class="viewer__action"></div>
+            <div id="root" class="viewer__action">
+                sadasdsad
+            </div>
         </div>
         
     </main>
@@ -36,7 +44,7 @@
         </div>
     </aside>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/libs.min.js"></script>
-    <script type="module" src="js/main.js"></script>
+    <script  src="js/libs.min.js"></script> 
+   <script  src="js/main.js"></script>
 </body>
 </html>
