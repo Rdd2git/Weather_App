@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.min.css">
-    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -15,14 +15,10 @@
                     Weather App
                 </p>
             </div> 
-            <div class="header__search"  >
-                <form id="set" onchange="this.value = event.target.value">
-                    <input  class="header__search-input" type="text"  name="location" placeholder='enter your location' id="set">
-                   
+            <div class="header__search" >
+                <form id="set" onchange="this.value = event.target.value" name="location">
+                    <input  class="header__search-input" type="text"   placeholder='enter your location' name="search" id="set">
                 </form>
-                
-                
-                
             </div>
         </div>
         
@@ -44,7 +40,7 @@
         </div>
     </aside>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script  src="js/libs.min.js"></script> 
-   <script  src="js/main.js"></script>
+   <script type="module"  src="js/libs.min.js"></script>  
+   <script type="module" src="js/main.js"></script>
 </body>
 </html>
